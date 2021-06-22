@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PersonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/personFirstName"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="24sp"
+                android:textColor="#4C4C4C"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/personLastName"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:textColor="#4C4C4C"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/personGender"
+                android:layout_width="227dp"
+                android:layout_height="wrap_content"
+                android:textColor="#4C4C4C"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/listPersonExpandableView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="10dp">
+
+        </ExpandableListView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
